@@ -1,34 +1,62 @@
 html, body {
 	background-color: black !important; /* Dark background color */
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+	height: 100%;
+	margin: 0;
+	flex-direction: column;
 	overflow: hidden; /* Hide scrollbar */
 }
 
 body{
-	font-family: 'Amatic SC' !important;
-	display: flex;
-	flex-direction: column;
+	font-family: 'Amatic SC' !important;	
 }
 
 .nav_bar{
 	font-size: 30px;
 }
 
-.container-fluid {
-    flex: 1;
+.page_container{
+	border: sp;;
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-template-rows: 1fr 15fr 1%;
+}
+
+.app{
+	display: grid;
+	grid-template-columns: 1.5fr 8.5fr;
+}
+
+.app .bar_nav_flex{
+	background-color: rgb(77, 77, 77);
+	border: 2px solid black;
+	justify-content: center;
+	align-items: flex-start;
+	display: flex;
+	gap: 80px;
+}
+
+.app .bar_nav{
+	background-color: rgb(77, 77, 77);
+	margin: 50px;
+	display: grid;
+	gap: 80px;
+}
+
+.app .content_nav{
+	border: 2px solid black;
+	background-color: black;
 }
 
 .footer {
 	background-color: rgb(117, 11, 216) !important;
 	color: white !important; /* White text color */
 	text-align: center;
-	padding: 0,1rem 0 !important;
+	padding:  0 !important;
 	position: sticky;
 	bottom: 0;
 	width: 100%;
+	border: 1px solid black;
 }
 
 .container{
@@ -40,3 +68,7 @@ body{
 	color: #ffffff !important; /* Ensure text color is white */
 }
 
+.table-container{
+	max-height: 100vh;
+	overflow-y: auto !important;
+}
